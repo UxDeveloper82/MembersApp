@@ -1,0 +1,14 @@
+C:\Users\Martin\Desktop\Members\membersapp.api\bin\Debug\netcoreapp2.2\MembersApp.API.deps.json
+C:\Users\Martin\Desktop\Members\membersapp.api\bin\Debug\netcoreapp2.2\MembersApp.API.runtimeconfig.json
+C:\Users\Martin\Desktop\Members\membersapp.api\bin\Debug\netcoreapp2.2\MembersApp.API.runtimeconfig.dev.json
+C:\Users\Martin\Desktop\Members\membersapp.api\bin\Debug\netcoreapp2.2\MembersApp.API.dll
+C:\Users\Martin\Desktop\Members\membersapp.api\bin\Debug\netcoreapp2.2\MembersApp.API.pdb
+C:\Users\Martin\Desktop\Members\membersapp.api\obj\Debug\netcoreapp2.2\MembersApp.API.csprojAssemblyReference.cache
+C:\Users\Martin\Desktop\Members\membersapp.api\obj\Debug\netcoreapp2.2\MembersApp.API.csproj.CoreCompileInputs.cache
+C:\Users\Martin\Desktop\Members\membersapp.api\obj\Debug\netcoreapp2.2\MembersApp.API.RazorAssemblyInfo.cache
+C:\Users\Martin\Desktop\Members\membersapp.api\obj\Debug\netcoreapp2.2\MembersApp.API.RazorAssemblyInfo.cs
+C:\Users\Martin\Desktop\Members\membersapp.api\obj\Debug\netcoreapp2.2\MembersApp.API.AssemblyInfoInputs.cache
+C:\Users\Martin\Desktop\Members\membersapp.api\obj\Debug\netcoreapp2.2\MembersApp.API.AssemblyInfo.cs
+C:\Users\Martin\Desktop\Members\membersapp.api\obj\Debug\netcoreapp2.2\MembersApp.API.RazorTargetAssemblyInfo.cache
+C:\Users\Martin\Desktop\Members\membersapp.api\obj\Debug\netcoreapp2.2\MembersApp.API.dll
+C:\Users\Martin\Desktop\Members\membersapp.api\obj\Debug\netcoreapp2.2\MembersApp.API.pdb

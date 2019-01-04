@@ -1,0 +1,18 @@
+<br><br>
+<div class="container">
+   <table class="table table-bordered table-hover">
+       <thead>
+             <tr>
+                 <th>Customer</th>
+                 <th>Membership Type</th>
+                 <th>Delete</th>
+             </tr>
+       </thead>
+       <tbody *ngFor="let customer of customers">
+             <tr>
+                 <td>{{customer.name}}</td>
+             </tr> 
+       </tbody>
+   </table>
+</div>
+

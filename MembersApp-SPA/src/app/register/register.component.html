@@ -1,0 +1,14 @@
+<div class="container">
+  <h2>Sign Up</h2>
+  <form #registerForm="ngForm" (ngSubmit)="register()">
+    <div class="form-group">
+      <label for="usr">Name:</label>
+      <input type="text" class="form-control" id="usr">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd">
+    </div>
+    <button type="submit" class="btn btn-success btn-large">Submit</button>
+  </form>
+</div>
