@@ -10,6 +10,6 @@ namespace MembersApp.API.Data
         public DbSet<Value> Values {get; set; }
 
         public DbSet<Customer> Customers { get; set; }
-         public DbSet<MembershipType> MembershipTypes { get; set; }
+        public DbSet<User> Users { get; set; }
     }
 }
