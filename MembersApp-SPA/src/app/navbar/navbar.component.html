@@ -1,25 +1,43 @@
-<div class="navbar navbar-inverse navbar-fixed-top">
+<nav class="navbar navbar-expand-md navbar-dark navbar-fixed bg-dark">
       <div class="container">
-              <div class="navbar-header">
-                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                  </button>
-                  <a class="navbar-brand" [routerLink]="['/home']">MemberApp</a>
-              </div>
-              <div class="navbar-collapse collapse">
-                      <ul class="nav navbar-nav">
-                          <li><a [routerLink]="['/new-rentals']">New Rental</a></li>
-                          <li><a [routerLink]="['/customers']">Customers</a></li>
-                          <li><a [routerLink]="['/movies']">Movies</a></li>
-                          <li><a [routerLink]="['/values']">Values</a></li>
-                      </ul>
-                      <ul class="nav navbar-nav navbar-right">
-                          <li><a [routerLink]="['/register']" id="registerLink">Register</a></li>
-                          <li><a [routerLink]="['/login']" id="loginLink">Log in</a></li>
-                      </ul>
-
-              </div>
+              <a class="navbar-brand" [routerLink]="['/home']">MemberApp</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>            
+                <div class="navbar-collapse collapse" id="navbarsExampleDefault">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                    <a class="nav-link" [routerLink]="['/new-rentals']">New Rental</a>
+                            </li>
+                            <li class="nav-item active">
+                                    <a class="nav-link" [routerLink]="['/customers']">Customers</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" [routerLink]="['/movies']">Movies</a></li>
+                            <li class="nav-item active">
+                                <a class="nav-link" [routerLink]="['/values']">Values</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" (click)="logout()">Logout</a>
+                            </li>
+                        </ul>
+                        <div *ngIf="loggedIn()" class="dropdown">
+                            <a class="dropdown-toggle text-light">
+                            Welcome User
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#"><i class="fa fa-user"></i>Edit Profile</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#"><i class="fa fa-sign-out"></i>Logout</a>
+                            </div>
+                        </div>
+                    <form *ngIf="!loggedIn()" #loginForm="ngForm" class="form-inline my-2 my-lg-0" (ngSubmit)="login()">
+                            <input class="form-control" type="text" name="username"
+                                placeholder="Username" required [(ngModel)]="model.username">
+                            <input class="form-control" type="text" name="password"
+                            placeholder="Password" required [(ngModel)]="model.password">
+                            <button [disabled]="!loginForm.valid" class="btn btn-outline-success my-2 my-sm-0" type="submit">Login</button>
+                    </form>
+            </div>
       </div>
-</div>
+</nav>
