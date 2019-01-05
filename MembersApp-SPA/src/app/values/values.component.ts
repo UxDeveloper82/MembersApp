@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./values.component.css']
 })
 export class ValuesComponent implements OnInit {
-  values: any = {};
+  values: any;
   constructor(private http: HttpClient) { }
 
   ngOnInit() {
