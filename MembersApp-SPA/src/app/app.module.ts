@@ -8,6 +8,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { JwtModule } from '@auth0/angular-jwt';
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -41,6 +42,7 @@ export function tokenGetter() {
       FormsModule,
       HttpClientModule,
       RouterModule.forRoot(appRoutes),
+      BsDropdownModule.forRoot(),
       JwtModule.forRoot({
          config: {
            tokenGetter: tokenGetter,
