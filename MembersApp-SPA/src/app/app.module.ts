@@ -20,6 +20,7 @@ import { MoviesComponent } from './movies/movies.component';
 import { NewRentalsComponent } from './new-rentals/new-rentals.component';
 import { LoginComponent } from './login/login.component';
 import { ValuesComponent } from './values/values.component';
+import { DashboardInputComponent } from './dashboard/dashboard-input/dashboard-input.component';
 
 export function tokenGetter() {
    return localStorage.getItem('token');
@@ -35,7 +36,8 @@ export function tokenGetter() {
       MoviesComponent,
       NewRentalsComponent,
       LoginComponent,
-      ValuesComponent
+      ValuesComponent,
+      DashboardInputComponent
    ],
    imports: [
       BrowserModule,
